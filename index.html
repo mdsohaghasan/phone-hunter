@@ -10,8 +10,39 @@
 </head>
 
 <body>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+        <h1 id="test" class="text-center text-blue-600 text-3xl sm:text-5xl font-light my-10">Smart Phone Finder</h1>
+    </a>
+    <!-- header end -->
+    <div class="flex justify-center">
+        <div class="">
+            <div class=" flex flex-wrap  w-full ">
+                <input id="search-field" type="search"
+                    class=" px-3 py-1.5  text-gray-700 bg-white  border border-solid border-gray-300 rounded  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    placeholder="Search">
+                <button id="search-button" onclick="searchPhone()"
+                    class="btn px-6 py-2.5 bg-blue-600 text-white">Search</button>
+            </div>
+        </div>
+    </div>
+    <!--end- search box -->
 
-    <h1 id="test" class="text-green-500">Hello Assignment Six </h1>
+    <!--start  showing search details  -->
+    <div id="phone-details">
+
+    </div>
+    <!--end  showing search details  -->
+
+    <!-- ---------------------------------- -->
+    <!-- start search result  -->
+    <div class="m-20 p-3 rounded">
+        <div id="search-result" class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-3">
+
+        </div>
+    </div>
+    <!-- end search result  -->
+    <!-- --------------------------------------  -->
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/script.js"></script>
